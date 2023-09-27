@@ -60,7 +60,7 @@ class _OnboardingFirstState extends State<OnboardingFirst> {
                 Align(
                     alignment: Alignment.bottomRight,
                     child: CustomButton(
-                      nameButton: 'Next',
+                      nameButton: 'Selanjutnya',
                       onTap: () {
                         Navigator.push(
                           context,

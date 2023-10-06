@@ -15,11 +15,11 @@ class CustomPromoImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Stack(
-        children: <Widget>[
-          Material(
+    return Stack(
+      children: <Widget>[
+        GestureDetector(
+          onTap: onTap,
+          child: Material(
             elevation: 4,
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
@@ -77,32 +77,32 @@ class CustomPromoImage extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
-            bottom: 0.5,
-            right: 0.5,
-            child: Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(10),
-                  bottomRight: Radius.circular(10),
-                ),
-                color: mainColor,
+        ),
+        Positioned(
+          bottom: 0.5,
+          right: 0.5,
+          child: Container(
+            width: 40,
+            height: 40,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(10),
+                topRight: Radius.circular(10),
+                bottomRight: Radius.circular(10),
               ),
-              child: IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.add,
-                  size: 25,
-                  color: Colors.white,
-                ),
+              color: mainColor,
+            ),
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.add,
+                size: 25,
+                color: Colors.white,
               ),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

@@ -8,3 +8,4 @@ part 'splash_screen.dart';
 part 'onboarding_first.dart';
 part 'onboarding_second.dart';
 part 'home_page.dart';
+part 'detail_page.dart';

@@ -178,28 +178,48 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/cake_image1.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailPage(),
+                              ),
+                            );
+                          },
                         ),
                         const SizedBox(
                           width: 16,
                         ),
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/cake_image2.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {},
                         ),
                         const SizedBox(
                           width: 16,
                         ),
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/cake_image4.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {},
+                        ),
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        CustomImageCake(
+                          imageCake: 'images/cake_image5.jpg',
+                          nameCake: 'Muffin Creamy',
+                          typeCake: 'Chocolate',
+                          priceCake: 'Rp. 5.000',
+                          onTap: () {},
                         ),
                       ],
                     ),
@@ -220,7 +240,23 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         CustomPromoImage(
-                          imagePromo: 'images/cake1.png',
+                          imagePromo: 'images/dessert_image1.jpg',
+                          nameCake: 'Creamy Cake Chocolate',
+                          price: 'Rp. 5.000',
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => DetailPage(),
+                              ),
+                            );
+                          },
+                        ),
+                        const SizedBox(
+                          width: 24,
+                        ),
+                        CustomPromoImage(
+                          imagePromo: 'images/dessert_image2.jpg',
                           nameCake: 'Creamy Cake Chocolate',
                           price: 'Rp. 5.000',
                           onTap: () {},
@@ -229,16 +265,7 @@ class HomePage extends StatelessWidget {
                           width: 24,
                         ),
                         CustomPromoImage(
-                          imagePromo: 'images/cake1.png',
-                          nameCake: 'Creamy Cake Chocolate',
-                          price: 'Rp. 5.000',
-                          onTap: () {},
-                        ),
-                        const SizedBox(
-                          width: 24,
-                        ),
-                        CustomPromoImage(
-                          imagePromo: 'images/cake1.png',
+                          imagePromo: 'images/dessert_image4.jpg',
                           nameCake: 'Creamy Cake Chocolate',
                           price: 'Rp. 5.000',
                           onTap: () {},
@@ -265,28 +292,31 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/dessert_image2.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {},
                         ),
                         const SizedBox(
                           width: 16,
                         ),
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/cake_image2.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {},
                         ),
                         const SizedBox(
                           width: 16,
                         ),
                         CustomImageCake(
-                          imageCake: 'images/cake1.png',
+                          imageCake: 'images/dessert_image3.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
                           priceCake: 'Rp. 5.000',
+                          onTap: () {},
                         ),
                       ],
                     ),

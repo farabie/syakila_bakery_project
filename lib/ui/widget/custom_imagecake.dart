@@ -4,7 +4,7 @@ class CustomImageCake extends StatelessWidget {
   String imageCake;
   String nameCake;
   String typeCake;
-  String priceCake;
+  int priceCake;
   final void Function() onTap;
 
   CustomImageCake({

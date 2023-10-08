@@ -24,7 +24,7 @@ class DetailPage extends StatelessWidget {
             scrollDirection: Axis.vertical,
             child: Container(
               margin: EdgeInsets.only(
-                top: MediaQuery.of(context).size.width * 0.6,
+                top: MediaQuery.of(context).size.width * 0.55,
               ),
               child: CustomDescriptionCake(
                 nameCake: cake.nameCake,

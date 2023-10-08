@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(
                 top: 24,
-                left: 32,
+                left: 16,
                 right: 16,
               ),
               child: Column(
@@ -182,7 +182,7 @@ class HomePage extends StatelessWidget {
                           imageCake: cake.imageCake,
                           nameCake: cake.nameCake,
                           typeCake: cake.flavorCake,
-                          priceCake: cake.price.toString(),
+                          priceCake: cake.price,
                           onTap: () {
                             Navigator.push(
                               context,
@@ -262,7 +262,7 @@ class HomePage extends StatelessWidget {
                           imageCake: 'images/dessert_image2.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
+                          priceCake: 5000,
                           onTap: () {},
                         ),
                         const SizedBox(
@@ -272,7 +272,7 @@ class HomePage extends StatelessWidget {
                           imageCake: 'images/cake_image2.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
+                          priceCake: 5000,
                           onTap: () {},
                         ),
                         const SizedBox(
@@ -282,7 +282,7 @@ class HomePage extends StatelessWidget {
                           imageCake: 'images/dessert_image3.jpg',
                           nameCake: 'Muffin Creamy',
                           typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
+                          priceCake: 5000,
                           onTap: () {},
                         ),
                       ],

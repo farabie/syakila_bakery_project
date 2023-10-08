@@ -2,7 +2,7 @@
     package="com.example.syakila_bakery_project">
    <application
         android:label="Syakila Cake Bakery"
-        android:name="Syakila Bakary"
+        android:name="${applicationName}"
         android:icon="@mipmap/ic_bakery">
         <activity
             android:name=".MainActivity"

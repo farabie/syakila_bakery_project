@@ -73,7 +73,7 @@ class CustomImageCake extends StatelessWidget {
                     height: 10,
                   ),
                   Text(
-                    priceCake.toString(),
+                    'Rp. ${priceCake}',
                     textAlign: TextAlign.start,
                     style: normalFontStyle.copyWith(
                       fontSize: 14,

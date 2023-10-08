@@ -172,60 +172,34 @@ class HomePage extends StatelessWidget {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        CustomImageCake(
-                          imageCake: 'images/cake_image1.jpg',
-                          nameCake: 'Muffin Creamy',
-                          typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
+                  SizedBox(
+                    height: 210,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        final ProductCake cake = productCakeList[index];
+                        return CustomImageCake(
+                          imageCake: cake.imageCake,
+                          nameCake: cake.nameCake,
+                          typeCake: cake.flavorCake,
+                          priceCake: cake.price.toString(),
                           onTap: () {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => DetailPage(),
+                                builder: (context) => DetailPage(
+                                  cake: cake,
+                                ),
                               ),
                             );
                           },
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        CustomImageCake(
-                          imageCake: 'images/cake_image2.jpg',
-                          nameCake: 'Muffin Creamy',
-                          typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
-                          onTap: () {},
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        CustomImageCake(
-                          imageCake: 'images/cake_image4.jpg',
-                          nameCake: 'Muffin Creamy',
-                          typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
-                          onTap: () {},
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        CustomImageCake(
-                          imageCake: 'images/cake_image5.jpg',
-                          nameCake: 'Muffin Creamy',
-                          typeCake: 'Chocolate',
-                          priceCake: 'Rp. 5.000',
-                          onTap: () {},
-                        ),
-                      ],
+                        );
+                      },
+                      itemCount: productCakeList.length,
                     ),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 16,
                   ),
                   Text(
                     'Recommended for you',
@@ -243,14 +217,7 @@ class HomePage extends StatelessWidget {
                           imagePromo: 'images/dessert_image1.jpg',
                           nameCake: 'Creamy Cake Chocolate',
                           price: 'Rp. 5.000',
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DetailPage(),
-                              ),
-                            );
-                          },
+                          onTap: () {},
                         ),
                         const SizedBox(
                           width: 24,

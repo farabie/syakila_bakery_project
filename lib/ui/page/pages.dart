@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:syakila_bakery_project/model/model.dart';
 import 'package:syakila_bakery_project/shared/shared.dart';
 import 'package:syakila_bakery_project/ui/widget/widget.dart';
 
